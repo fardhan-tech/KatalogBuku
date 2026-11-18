@@ -56,3 +56,6 @@ KatalogBuku/
     view/katalog.fxml
     view/styles/app.css
     gambar/     biru.png, hijau.png, merah.png
+
+Screenshot 2026-11-18 143058 
+![Tampilan halaman](Screenshot 2026-11-18 143058.png)
