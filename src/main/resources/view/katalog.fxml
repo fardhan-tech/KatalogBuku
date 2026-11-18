@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.KatalogController"
+            prefWidth="1000" prefHeight="760"
+            stylesheets="@styles/app.css">
+    <top>
+        <VBox spacing="8" styleClass="header">
+            <Label text="Katalog Buku" styleClass="title"/>
+            <Label text="Isi form, simpan, lalu lihat katalog."
+                   wrapText="true" styleClass="muted"/>
+            <Label text="Judul buku"/>
+            <TextField fx:id="judulField" promptText="Contoh: Pemrograman Java"/>
+            <Label text="Penulis"/>
+            <TextField fx:id="penulisField" promptText="Contoh: Budi Santoso"/>
+            <Label text="Harga (Rp)"/>
+            <TextField fx:id="hargaField" promptText="Contoh: 45000"/>
+            <Label text="Sampul contoh"/>
+            <ComboBox fx:id="sampulBox" maxWidth="Infinity"/>
+            <Button text="Simpan" onAction="#saveBook"
+                    styleClass="button-primary"/>
+            <Label fx:id="pesanLabel" wrapText="true"/>
+            <Label fx:id="jumlahLabel" text="Jumlah buku: 0"/>
+        </VBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="false">
+            <content>
+                <TilePane fx:id="katalogPane" hgap="16" vgap="16"
+                          alignment="TOP_LEFT" tileAlignment="TOP_LEFT"
+                          styleClass="katalog"/>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
