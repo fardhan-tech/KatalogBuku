@@ -9,10 +9,6 @@ Dibuat dengan **Java, JavaFX, dan SQLite (JDBC)**.
 - Data tersimpan di database SQLite dan tetap ada saat aplikasi dibuka kembali
 - Katalog ditampilkan dalam bentuk kartu buku
 
-## Screenshot
-
-
-
 ## Kebutuhan
 - JDK 21
 - Apache Maven (sudah termasuk di Apache NetBeans)
